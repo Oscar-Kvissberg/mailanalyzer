@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@layer base {
+  html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  /* Specifika stilar för rubriker */
+  h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.5px !important;
+  }
+
+  h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.3px !important;
+  }
+
+  h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.2px !important;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Överskrid alla andra font-inställningar */
+*,
+*::before,
+*::after {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Mer subtila rubriker */
+.text-3xl {
+  font-weight: 500 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.text-2xl {
+  font-weight: 500 !important;
+  letter-spacing: -0.3px !important;
+}
+
+.text-xl {
+  font-weight: 500 !important;
+  letter-spacing: -0.2px !important;
+}
+
+.font-bold {
+  font-weight: 500 !important;
+}
+
+.font-semibold {
+  font-weight: 500 !important;
+}
